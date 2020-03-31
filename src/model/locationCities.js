@@ -16,4 +16,5 @@ module.exports = function (sequelize, type) {
         timestamps: false,
         tableName: 'location_cities'
     });
+    
 }
