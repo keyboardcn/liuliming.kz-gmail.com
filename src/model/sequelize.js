@@ -1,8 +1,8 @@
 
 const Sequelize = require('sequelize');
-const GeoVisitModel = require('./geoVisit');
-const LocationCityModel = require('./locationCities');
-const sequelize = new Sequelize('advertiise-2019-10-17-22-9', 'abc', 'abc', {
+const {LocationCityModel, GeoVisitModel} = require('./models');
+
+const sequelize = new Sequelize(process.env.DATABASE, process.env.USER, process.env.PASSWORD, {
     host: 'localhost',
     dialect: 'mssql',
     pool: {
@@ -22,4 +22,4 @@ module.exports = {
     LocationCity
 }
 
-Sequelize.DataTypes.INTEGER
+//Sequelize.DataTypes.INTEGER
