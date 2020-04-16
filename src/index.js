@@ -1,3 +1,4 @@
+// we set routes here
 const dotenv = require("dotenv"); //load env settings
 dotenv.config();
 
